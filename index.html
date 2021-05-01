@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:skyblue;">
+    <div class="header">
+    <link rel="stylesheet" type="text/css" href="/Robotics_Playground/assets/css/header.css">
+    <img class="header_img" src="/Robotics_Playground/assets/img/header_img.png">
+</div>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <!-- <li class="dropdown">
+    <a href="javascript:void(0)">About</a>
+    <div class="dropdown-content">
+      <a href="https://ceeo.tufts.edu/">Tufts CEEO</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)">Explore</a>
+    <div class="dropdown-content">
+      <!-- <a href="/easy">Levels</a> 
+  </li>
+  
+  <li><a href="#news">News</a></li> -->
+
+  <li><a href="#search">Find a project</a></li>
+
+
+  <li><a href="#all">See all projects</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Explore</a>
+    <div class="dropdown-content">
+      <a href="/Robotics_Playground//explore/levels">Levels</a>
+      <a href="/Robotics_Playground//explore/themes">Themes</a>
+      <a href="/Robotics_Playground//explore/skills">Skills</a>
+      <a href="/Robotics_Playground//explore/platforms">Platforms</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Resources</a>
+    <div class="dropdown-content">
+      <a href="http://www.legoengineering.com/">LEGO Engineering</a>
+      <a href="#">CEEO Innovations</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="https://ceeo.tufts.edu/">Tufts CEEO</a>
+    </div>
+  </li>
+
+
+
+</ul>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/Robotics_Playground/assets/css/card.css">
+
+<body>
+
+    <div class="w3-container w3-padding-64 w3-xlarge" id="about">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo">Find a Project</h1>
+        </div>
+    </div>
+
+    <div id="search" style="padding-left:10%;padding-right:10%">
+        <!-- <h1> This is the  </h1>
+<h2> It's working only for all tags, but have to double check if it's fuzzy/restricted</h2> -->
+<style> 
+#search-input {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+ #search-input:focus {
+    width: 100%;
+  }
+  </style>
+<!-- Html Elements for Search -->
+<div id="search-container">
+  <input type="text" id="search-input" placeholder="search...">
+  <ul id="results-container"></ul>
+  <div id="result" style="background-color:red;"></div>
+  </div>
+  
+  <!-- Script pointing to search-script.js -->
+  <script src="/Robotics_Playground/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    // searchResultTemplate: '<li><a href="{rl}">{title}</a></li>',
+    json: '/Robotics_Playground/search.json',
+    limit:100
+  })
+
+//  // searchResultTemplate: '<li><a href="/spike_prime/{title | split:" " | join: "-" | append: ".html"}">{title}</a></li>'
+//  <a href="/spike_prime/.html"><img src="../assets/img/placeholder.png" style="width:100%"></a>'
+  </script>
+
+
+    </div>
+     <div class="w3-container w3-padding-64 w3-large" style="padding-left:10%" id="menu">
+            <div class="w3-content">
+                <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge"><a href="/Robotics_Playground/explore/levels/beginner.html"> Beginner</a></button></div>
+                <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" ><a href="/Robotics_Playground/explore/levels/intermediate.html"> Intermediate</a></button></div>
+                <br/>
+                <p></p>
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/animals_&_nature.html" style="text-decoration: none">Animals & Nature</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/art_&_literature.html">Art & Literature</a></button></div>
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/mechanics_&_movement.html">Mechanics & Movement</a></button></div>  
+                <br/> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/music_&_movies.html">Music & Movies</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/sports_&_cars.html">Sports & Cars</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/supernatural.html">Supernatural</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div> 
+                
+                <p></p>
+                <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div> 
+                <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge"><a href="/Robotics_Playground/explore/skills/client_focused.html">Client Focused</a></button></div> 
+                <p></p>
+                <div style="display: inline-block"><button class="w3-button w3-green w3-round-xlarge"><a href="/Robotics_Playground/explore/platforms/spike_prime.html">SPIKE Prime</a></button></div>
+            </div>
+        </div>
+<div> </div>
+    <br/>
+    <br/>
+
+
+
+<div id="all">
+    <div class="w3-container w3-padding-64 w3-blue w3-xlarge" id="about">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">See All Projects</h1>
+        </div>
+    </div>
+
+    <div class="grid-container" style="background-color: #2396F3;">
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1ouxVrLU2t1yTnq2NYshhfiQSWfOmJ35N" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/aviary.html" target="_blank"><h4><b>Aviary</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/animals_&_nature.html">Animals & Nature</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1fdJwyixpxChs5FHGaxZDDXF7_lLQBS30" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/ball_launcher.html" target="_blank"><h4><b>Ball Launcher</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1c39sfqBFalSJbNiBKIbQTILNvjn-KMu_xKnJbDU99-s" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/ball_thrower.html" target="_blank"><h4><b>Ball Thrower</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1G6S16nKfg4REo_9e8ZG6QQOcug29NGDA" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/can_do.html" target="_blank"><h4><b>Can Do</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=17EREjx3D2Q8UkOWKm5skbeZ0_2rUjSUH" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/clean_sweep.html" target="_blank"><h4><b>Clean Sweep</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1ia8Oc-8S7PuEtrlX48fU0g1zJZq1C9b3" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/creepy_crawly.html" target="_blank"><h4><b>Creepy Crawly</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/animals_&_nature.html">Animals & Nature</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1MqeXgbYSpilMh1XKWChLWfncplzkzbrX" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/future_furniture.html" target="_blank"><h4><b>Future Furniture</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1eot6MIcoFIFJRbO1ZDM0BLOFhk-P-fMx" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/monster.html" target="_blank"><h4><b>Monster</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/supernatural.html">Supernatural</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=17LbTOmBXcm5oie4HGzrQxbB32OIrIWtiA2iI0X-_yoE" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/morning_helper.html" target="_blank"><h4><b>Morning Helper</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1dujJSK7Xoa_htRGKInsDS79UO8D4-W9o" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/party_time.html" target="_blank"><h4><b>Party Time</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=16JQNs2hGLZptdk5XdzhtZ2AkjwfwwkN-" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/percussion_playtime.html" target="_blank"><h4><b>Percussion Playtime</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/music_&_movies.html">Music & Movies</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1UjvW4eQK5g58d-MwfUn0nePwDPMjFoPM" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/puppet_show.html" target="_blank"><h4><b>Puppet Show</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/art_&_literature.html">Art & Literature</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1Z_NXfOoYQ-eaL8zBjbjKoDLOjDXze6UH" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/ramp_climbing_car.html" target="_blank"><h4><b>Ramp Climbing Car</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/sports_&_cars.html">Sports & Cars</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=116K46SPPFEWa7j7XuC6LgoIA3EeXLD3o" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/robochef.html" target="_blank"><h4><b>RoboChef</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1b1L5jo3xuQfkD3xKiprJXRKg5vTFR_sl" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/simple_car.html" target="_blank"><h4><b>Simple Car</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/sports_&_cars.html">Sports & Cars</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=180Emghx5TGsBagMb8t6c1UFlDKeukgD9" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/space_exploration.html" target="_blank"><h4><b>Space Exploration</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1mdXVQLB3eis65wsvPUbuUqH2GMTiAxN6" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/time_keeper.html" target="_blank"><h4><b>Time Keeper</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/client_focused.html">Client Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1obSRchmAWsn9ez3gofkp8VS0rx2B4wvA" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/trophy.html" target="_blank"><h4><b>Trophy</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1giBqTlsQrN2BH5hhnOt0-Z-MsDJzQXhx" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/under_the_sea.html" target="_blank"><h4><b>Under the Sea</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/animals_&_nature.html">Animals & Nature</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1i3jsGQQ0LfIjyeYwMOUaNCr56Njvxjz2ua-VoWUHAdk" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/greetings_earthings.html" target="_blank"><h4><b>Greetings Earthings</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/mechanics_&_movement.html">Mechanics & Movement</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=13yxSNarrfKajdLaoFNbwjfvF8dEOsyuBUgOAhmVzliw" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/pet_sitter.html" target="_blank"><h4><b>Pet Sitter</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/animals_&_nature.html">Animals & Nature</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1Vq5_KbyfdsMA6-07FTcKP6SjKQmkom8uiUBv4fc2-Kg" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/silly_walks.html" target="_blank"><h4><b>Silly Walks</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/mechanics_&_movement.html">Mechanics & Movement</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1YDYRm249yFYBBQafy-4LzmPRCHAWqo3INllJ1azKywk" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/tricky-food_utencil.html" target="_blank"><h4><b>Tricky-Food Utencil</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1_Dkuct0m8Yp64v9wGGwsXcimNpsw-jjKtJxj_nYyy_8" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/human_plus.html" target="_blank"><h4><b>Human Plus</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/client_focused.html">Client Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1NtRemjHnqYJYLywVg-bTTnrsM1Vjy4QDkk2MN5YufrM" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/ski_lift.html" target="_blank"><h4><b>Ski Lift</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/task_helpers.html">Task Helpers</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1T6hprpoG7vix9-qZbs88D8cb3QKj_AdXwOXMlJHmweg" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/tools_for_school.html" target="_blank"><h4><b>Tools For School</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/beginner.html">Beginner</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/innovative_creations.html">Innovative Creations</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/all_skills.html">All Skills</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+        <div class="card">
+        <img src="https://drive.google.com/thumbnail?id=1Tdd2bwd1iEtAKwSZW4MbOzZPmMPo4BgAjDswBXqBvSI" style="width:100%"> 
+            <div class="container"> 
+                <a href="/Robotics_Playground/spike_prime/word_cup.html" target="_blank"><h4><b>Word Cup</b></h4></a>
+                <div style="text-align: right;">
+                    <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/levels/intermediate.html">Intermediate</a></button></div> <br/>
+                    <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/themes/sports_&_cars.html">Sports & Cars</a></button></div><br/>
+                    <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="/Robotics_Playground/explore/skills/building_focused.html">Building Focused</a></button></div>
+                </div>
+            </div>
+        </div> 
+    
+    </div>
+</div>
+
+
+
+</body>
+
+
+    <link rel="stylesheet" type="text/css" href="/Robotics_Playground/assets/css/footer.css">
+
+<div class="footer">
+    <img class="footer_img" src="/Robotics_Playground/assets/img/footer_img.png">
+</div>
+  </body>
+</html>
+
